@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deep Dive Report — Шесть систем. Одна карта.</title>
+<meta name="description" content="Персональный отчёт на основе 6 систем анализа. Натальная карта, Human Design, Матрица Судьбы, IR-индекс. Только то, что подтверждено твоими данными.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- STARS CANVAS -->
+<canvas id="stars"></canvas>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="logo">AHD <span class="logo-dot">·</span> Integrator</div>
+    <div class="nav-right">
+      <div class="nav-socials">
+        <a href="https://www.instagram.com/ahd_integrator/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="https://www.facebook.com/AHDINTEGRATOR" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+      </div>
+      <a href="#order" class="btn-nav">Заказать отчёт</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-glow glow-1"></div>
+  <div class="hero-glow glow-2"></div>
+  <div class="container">
+    <div class="badge reveal">Deep Dive Report</div>
+    <h1 class="hero-title reveal">Шесть систем анализа.<br>Одна карта.<br><em>Ни одного шаблонного вывода.</em></h1>
+    <p class="hero-sub reveal">Только то, что подтверждено твоими данными — и больше ничьими.</p>
+    <div class="hero-cta reveal">
+      <a href="#order" class="btn-primary">Заказать отчёт</a>
+      <a href="#structure" class="btn-ghost">Смотреть структуру</a>
+    </div>
+    <div class="hero-meta reveal">
+      <span>📄 PDF · 12 разделов</span>
+      <span class="sep">·</span>
+      <span>⏱ 3 дня</span>
+      <span class="sep">·</span>
+      <span>🔒 Индивидуально</span>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section section-dark" id="how">
+  <div class="container">
+    <div class="section-tag reveal">Как это работает</div>
+    <h2 class="section-title reveal">Три шага.<br>Никаких лишних действий.</h2>
+    <div class="steps-grid">
+      <div class="step-item reveal">
+        <div class="step-num">01</div>
+        <div class="step-name">Оставляешь данные</div>
+        <div class="step-desc">Дата, время и город рождения. Если есть готовый расчёт HD или натальная карта — пришли, это повысит точность.</div>
+      </div>
+      <div class="step-item reveal">
+        <div class="step-num">02</div>
+        <div class="step-name">Индивидуальный анализ</div>
+        <div class="step-desc">3 дня работы с шестью системами. Каждый вывод верифицируется минимум двумя независимыми источниками.</div>
+      </div>
+      <div class="step-item reveal">
+        <div class="step-num">03</div>
+        <div class="step-name">Получаешь отчёт</div>
+        <div class="step-desc">PDF-документ: 12 разделов, IR-индекс, три конкретных задания и инструкция на 12 месяцев. Готов для изучения.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOR WHOM -->
+<section class="section" id="forwho">
+  <div class="container">
+    <div class="section-tag reveal">Для кого</div>
+    <h2 class="section-title reveal">Ты уже пробовала читать<br>гороскопы и Human Design.</h2>
+    <p class="section-desc reveal">Получала много красивых слов — но мало понимания, что с этим делать. Узнавала себя в описании, но не видела следующего шага.</p>
+
+    <div class="cards-grid">
+      <div class="card reveal">
+        <div class="card-icon">◈</div>
+        <p>Знаешь свой тип HD, но не понимаешь как применить в реальной жизни</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">◈</div>
+        <p>Видишь паттерн, но не знаешь откуда он и как его остановить</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">◈</div>
+        <p>Хочешь механизм — не вдохновение — который объясняет именно твои действия</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">◈</div>
+        <p>Готова к честному разговору: не только про таланты, но и про теневые зоны</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">◈</div>
+        <p>Хочешь конкретные задания, а не общие рекомендации</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">◈</div>
+        <p>Понимаешь, почему один и тот же сценарий повторяется — в деньгах, в отношениях, в решениях</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- METHOD -->
+<section class="section section-dark" id="method">
+  <div class="section-glow"></div>
+  <div class="container">
+    <div class="section-tag reveal">Принцип метода</div>
+    <h2 class="section-title reveal"><em>Одна система — это версия.<br>Несколько систем — это факт о тебе.</em></h2>
+    <p class="section-desc reveal">В отчёт попадает только то, что подтверждено минимум <strong>двумя системами</strong>. Шесть независимых источников смотрят на одно и то же.</p>
+
+    <div class="systems-grid">
+      <div class="system-item reveal">
+        <div class="sys-num">01</div>
+        <div class="sys-content">
+          <div class="sys-name">Натальная карта</div>
+          <div class="sys-desc">Природа, мышление, конструкция</div>
+        </div>
+        <div class="sys-badge">Приоритет I</div>
+      </div>
+      <div class="system-item reveal">
+        <div class="sys-num">02</div>
+        <div class="sys-content">
+          <div class="sys-name">Human Design</div>
+          <div class="sys-desc">Тип энергии, стратегия решений</div>
+        </div>
+        <div class="sys-badge">Приоритет II</div>
+      </div>
+      <div class="system-item reveal">
+        <div class="sys-num">03</div>
+        <div class="sys-content">
+          <div class="sys-name">Матрица Судьбы</div>
+          <div class="sys-desc">Данность, задача, теневые зоны</div>
+        </div>
+      </div>
+      <div class="system-item reveal">
+        <div class="sys-num">04</div>
+        <div class="sys-content">
+          <div class="sys-name">Кармические узлы</div>
+          <div class="sys-desc">Откуда паттерн и куда расти</div>
+        </div>
+      </div>
+      <div class="system-item reveal">
+        <div class="sys-num">05</div>
+        <div class="sys-content">
+          <div class="sys-name">Теневые арканы</div>
+          <div class="sys-desc">Блоки в деньгах и отношениях</div>
+        </div>
+        <div class="sys-badge">Приоритет III</div>
+      </div>
+      <div class="system-item reveal">
+        <div class="sys-num">06</div>
+        <div class="sys-content">
+          <div class="sys-name">Психологический слой</div>
+          <div class="sys-desc">Механизм: почему, а не только что</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hierarchy-note reveal">
+      <span>Иерархия при противоречии:</span>
+      <div class="hierarchy-chain">
+        <span class="hc-item active">Натальная карта</span>
+        <span class="hc-arrow">→</span>
+        <span class="hc-item">Human Design</span>
+        <span class="hc-arrow">→</span>
+        <span class="hc-item">Арканы</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IR INDEX -->
+<section class="section" id="ir">
+  <div class="container">
+    <div class="section-tag reveal">IR-Индекс</div>
+    <h2 class="section-title reveal">Числовая метрика<br>согласованности</h2>
+    <p class="section-desc reveal">IR показывает, насколько твои текущие действия совпадают с тем, что заложено в карте. Это не оценка тебя — это точка отсчёта для роста.</p>
+
+    <div class="ir-params reveal">
+      <span>Принятие решений</span>
+      <span class="ir-dot">·</span>
+      <span>Действие</span>
+      <span class="ir-dot">·</span>
+      <span>Деньги</span>
+      <span class="ir-dot">·</span>
+      <span>Партнёрство</span>
+      <span class="ir-dot">·</span>
+      <span>Кармический вектор</span>
+    </div>
+
+    <div class="ir-levels">
+      <div class="ir-level reveal" data-pct="30">
+        <div class="ir-bar-wrap">
+          <div class="ir-bar" style="--w:30%"></div>
+        </div>
+        <div class="ir-info">
+          <div class="ir-range">0–30%</div>
+          <div class="ir-label">Выживание</div>
+          <div class="ir-desc">Энергия в защите</div>
+        </div>
+      </div>
+      <div class="ir-level reveal" data-pct="55">
+        <div class="ir-bar-wrap">
+          <div class="ir-bar" style="--w:55%"></div>
+        </div>
+        <div class="ir-info">
+          <div class="ir-range">31–55%</div>
+          <div class="ir-label">Компенсация</div>
+          <div class="ir-desc">Много усилий, мало результата</div>
+        </div>
+      </div>
+      <div class="ir-level reveal" data-pct="75">
+        <div class="ir-bar-wrap">
+          <div class="ir-bar" style="--w:75%"></div>
+        </div>
+        <div class="ir-info">
+          <div class="ir-range">56–75%</div>
+          <div class="ir-label">Раскрытие</div>
+          <div class="ir-desc">Рост возможен</div>
+        </div>
+      </div>
+      <div class="ir-level reveal" data-pct="100">
+        <div class="ir-bar-wrap">
+          <div class="ir-bar gold" style="--w:100%"></div>
+        </div>
+        <div class="ir-info">
+          <div class="ir-range">76–100%</div>
+          <div class="ir-label">Реализация</div>
+          <div class="ir-desc">Действует из ядра</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STRUCTURE -->
+<section class="section section-dark" id="structure">
+  <div class="section-glow glow-right"></div>
+  <div class="container">
+    <div class="section-tag reveal">Структура отчёта</div>
+    <h2 class="section-title reveal">12 разделов.<br>Каждый — о конкретном механизме.</h2>
+    <p class="section-desc reveal">Не описание черт характера — описание того, как работает твоя психика и почему.</p>
+
+    <div class="sections-list">
+      <div class="sec-item reveal">
+        <div class="sec-num">I</div>
+        <div class="sec-body">
+          <div class="sec-name">Конструкция личности</div>
+          <div class="sec-desc">Как думаешь, как принимаешь решения, когда энергия растёт, когда падает</div>
+        </div>
+      </div>
+      <div class="sec-item reveal">
+        <div class="sec-num">II</div>
+        <div class="sec-body">
+          <div class="sec-name">Главный внутренний конфликт</div>
+          <div class="sec-desc">Повторяющийся сценарий: к чему стремишься — и что выбираешь снова и снова вместо этого</div>
+        </div>
+      </div>
+      <div class="sec-item reveal">
+        <div class="sec-num">III</div>
+        <div class="sec-body">
+          <div class="sec-name">Точка силы</div>
+          <div class="sec-desc">Только то, что подтверждено тремя системами одновременно. Не комплимент — факт</div>
+        </div>
+      </div>
+      <div class="sec-item reveal">
+        <div class="sec-num">IV</div>
+        <div class="sec-body">
+          <div class="sec-name">Стратегический вектор 3–5 лет</div>
+          <div class="sec-desc">Что усилить, что делегировать, что исключить — из данных карты</div>
+        </div>
+      </div>
+      <div class="sec-item reveal">
+        <div class="sec-num">V</div>
+        <div class="sec-body">
+          <div class="sec-name">Зоны риска</div>
+          <div class="sec-desc">Механизм энергетического слива: триггер → паттерн → потеря</div>
+        </div>
+      </div>
+      <div class="sec-item reveal">
+        <div class="sec-num">VI</div>
+        <div class="sec-body">
+          <div class="sec-name">IR-индекс согласованности</div>
+          <div class="sec-desc">Числовая оценка того, насколько твои действия совпадают с картой</div>
+        </div>
+      </div>
+      <div class="sec-item reveal">
+        <div class="sec-num">VII</div>
+        <div class="sec-body">
+          <div class="sec-name">Деньги и реализация</div>
+          <div class="sec-desc">Условия максимального дохода. Кармический паттерн блока. Контрольные точки</div>
+        </div>
+      </div>
+      <div class="sec-item reveal">
+        <div class="sec-num">VIII</div>
+        <div class="sec-body">
+          <div class="sec-name">Партнёрские отношения</div>
+          <div class="sec-desc">Модель ресурсного партнёрства. Паттерн привязанности. Триггерная цепочка</div>
+        </div>
+      </div>
+      <div class="sec-item reveal">
+        <div class="sec-num">IX</div>
+        <div class="sec-body">
+          <div class="sec-name">Личная жизнь</div>
+          <div class="sec-desc">Эмоциональная конструкция. Условия подлинной близости. Скрытая зона</div>
+        </div>
+      </div>
+      <div class="sec-item reveal">
+        <div class="sec-num">X</div>
+        <div class="sec-body">
+          <div class="sec-name">Инструкция на 12 месяцев</div>
+          <div class="sec-desc">Усилить, прекратить, как принимать решения</div>
+        </div>
+      </div>
+      <div class="sec-item reveal">
+        <div class="sec-num">XI</div>
+        <div class="sec-body">
+          <div class="sec-name">Активные транзиты</div>
+          <div class="sec-desc">Какие планетарные циклы активны сейчас — и как влияют на деньги и отношения</div>
+        </div>
+      </div>
+      <div class="sec-item reveal">
+        <div class="sec-num">XII</div>
+        <div class="sec-body">
+          <div class="sec-name">Мотивационный протокол</div>
+          <div class="sec-desc">Три задания по методу под твой IR и тип HD</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON -->
+<section class="section" id="compare">
+  <div class="container">
+    <div class="section-tag reveal">Чем отличается</div>
+    <h2 class="section-title reveal">Не ещё один красивый отчёт</h2>
+
+    <div class="compare-table reveal">
+      <div class="compare-header">
+        <div class="col-usual">Обычно</div>
+        <div class="col-ahd">AHD Integrator</div>
+      </div>
+      <div class="compare-row">
+        <div class="col-usual">Описание знака, типа, профиля — каждое отдельно</div>
+        <div class="col-ahd">Шесть систем говорят об одном — видишь пересечения</div>
+      </div>
+      <div class="compare-row">
+        <div class="col-usual">Вдохновляющие слова без привязки к данным</div>
+        <div class="col-ahd">Каждый вывод подтверждён минимум двумя источниками</div>
+      </div>
+      <div class="compare-row">
+        <div class="col-usual">Таланты перечислены — что делать непонятно</div>
+        <div class="col-ahd">Механизм: не только что, но почему и как остановить</div>
+      </div>
+      <div class="compare-row">
+        <div class="col-usual">Теневая зона смягчена или не упоминается</div>
+        <div class="col-ahd">Теневые зоны честно и поведенчески — без диагнозов</div>
+      </div>
+      <div class="compare-row">
+        <div class="col-usual">Одна система — одна версия тебя</div>
+        <div class="col-ahd">IR-индекс: числовая точка отсчёта, не ощущение</div>
+      </div>
+      <div class="compare-row">
+        <div class="col-usual">Читаешь и живёшь по-прежнему</div>
+        <div class="col-ahd">Три конкретных задания — знаешь что делать дальше</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT'S INCLUDED -->
+<section class="section section-dark" id="includes">
+  <div class="container">
+    <div class="section-tag reveal">Что входит</div>
+    <h2 class="section-title reveal">Всё необходимое.<br>Ничего лишнего.</h2>
+
+    <div class="includes-grid">
+      <div class="include-item reveal">
+        <div class="inc-check">✓</div>
+        <div>
+          <div class="inc-name">PDF-отчёт · 12 разделов</div>
+          <div class="inc-desc">Полный анализ по всем блокам</div>
+        </div>
+      </div>
+      <div class="include-item reveal">
+        <div class="inc-check">✓</div>
+        <div>
+          <div class="inc-name">Вводная страница</div>
+          <div class="inc-desc">Как читать без специальных знаний</div>
+        </div>
+      </div>
+      <div class="include-item reveal">
+        <div class="inc-check">✓</div>
+        <div>
+          <div class="inc-name">IR-индекс с расшифровкой</div>
+          <div class="inc-desc">По 5 параметрам с интерпретацией</div>
+        </div>
+      </div>
+      <div class="include-item reveal">
+        <div class="inc-check">✓</div>
+        <div>
+          <div class="inc-name">Три персональных задания</div>
+          <div class="inc-desc">Метод подобран под твой IR</div>
+        </div>
+      </div>
+      <div class="include-item reveal">
+        <div class="inc-check">✓</div>
+        <div>
+          <div class="inc-name">Инструкция на 12 месяцев</div>
+          <div class="inc-desc">Усилить, прекратить, как решать</div>
+        </div>
+      </div>
+      <div class="include-item reveal">
+        <div class="inc-check">✓</div>
+        <div>
+          <div class="inc-name">Активные транзиты</div>
+          <div class="inc-desc">На текущий период: деньги и отношения</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="needs-block reveal">
+      <div class="needs-title">Нужны только:</div>
+      <div class="needs-items">
+        <span>📅 Дата рождения</span>
+        <span>⏰ Время рождения</span>
+        <span>📍 Город рождения</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-tag reveal">Вопросы и ответы</div>
+    <h2 class="section-title reveal">Ответы на часто<br>встречающиеся вопросы</h2>
+
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <div class="faq-q">Нужно ли знать астрологию или Human Design?</div>
+        <div class="faq-a">Нет. Основной текст написан простым языком без терминов. Технические источники — отдельно, для тех кто хочет проверить.</div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q">У меня уже есть расчёт HD и натальная карта. Это поможет?</div>
+        <div class="faq-a">Да. Если пришлёшь готовые данные — расчёты будут точнее. Если нет — достаточно даты, времени и города рождения.</div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q">Почему вывод попадает в отчёт только если подтверждён двумя системами?</div>
+        <div class="faq-a">Одна система — это версия. Она может описывать потенциал, а не реальность. Когда три независимых источника говорят об одном качестве — это структурный факт о тебе.</div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q">Скажет ли отчёт какую профессию выбрать?</div>
+        <div class="faq-a">Нет — и это намеренно. Карта описывает условия реализации энергии, а не профессию. Отчёт покажет при каких условиях ты максимально эффективна — а профессию выбираешь ты.</div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q">Сколько времени занимает подготовка?</div>
+        <div class="faq-a">3 рабочих дня. Каждый отчёт готовится индивидуально — без шаблонных подстановок. После оплаты я напишу тебе в течение 24 часов для подтверждения данных.</div>
+      </div>
+    </div>
+
+    <div class="ask-block reveal">
+      <div class="ask-title">Остался вопрос?</div>
+      <div class="ask-sub">Напиши — отвечу в течение 24 часов</div>
+      <form class="ask-form" id="askForm">
+        <div class="ask-row">
+          <input class="ask-input" type="text" name="name" placeholder="Твоё имя" required>
+          <input class="ask-input" type="email" name="email" placeholder="Email для ответа" required>
+        </div>
+        <textarea class="ask-textarea" name="question" placeholder="Напиши свой вопрос..." required></textarea>
+        <button type="submit" class="ask-btn">Отправить вопрос</button>
+        <div class="ask-success" id="askSuccess">✓ Вопрос получен — отвечу в течение 24 часов</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section section-dark" id="reviews">
+  <div class="container">
+    <div class="section-tag reveal">Отзывы</div>
+    <h2 class="section-title reveal">Что говорят<br>после получения отчёта</h2>
+    <div class="reviews-grid">
+
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">«То, что я читала в отчёте, я чувствовала, знала на уровне подсознания, по некоторым аспектам догадывалась. Но так, чтобы это было связано в единую взаимоподтверждающую систему — впервые.»</div>
+        <div class="review-author">
+          <div class="review-avatar">А</div>
+          <div>
+            <div class="review-name">Анна</div>
+            <div class="review-meta">Клиент AHD Integrator</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">«Интуитивно я так и чувствовала, а ты подтвердила мои догадки анализом. Это совсем другое ощущение — когда то, что знала внутри, теперь видишь снаружи, в структуре.»</div>
+        <div class="review-author">
+          <div class="review-avatar">М</div>
+          <div>
+            <div class="review-name">Мария</div>
+            <div class="review-meta">Клиент AHD Integrator</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">«Разрозненно я всё знала. Но так, чтобы это было связано в единую систему — впервые. Наконец-то не просто описание, а механика. Понятно что с этим делать.»</div>
+        <div class="review-author">
+          <div class="review-avatar">О</div>
+          <div>
+            <div class="review-name">Ольга</div>
+            <div class="review-meta">Клиент AHD Integrator</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">«В точку, особенно последнее. Я перечитала раздел три раза — не потому что не поняла, а потому что хотела убедиться что это правда про меня. Это правда.»</div>
+        <div class="review-author">
+          <div class="review-avatar">Е</div>
+          <div>
+            <div class="review-name">Екатерина</div>
+            <div class="review-meta">Клиент AHD Integrator</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">«Ожидала красивых слов — получила цифры, таблицы, задания. IR-индекс показал именно то, что я чувствовала, но не могла сформулировать. Теперь понятно почему одно и то же повторяется.»</div>
+        <div class="review-author">
+          <div class="review-avatar">Т</div>
+          <div>
+            <div class="review-name">Татьяна</div>
+            <div class="review-meta">Клиент AHD Integrator</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">«Три задания из XII раздела — конкретные, без воды. Два месяца работаю с ними. Впервые ощущение что двигаюсь из правильного места, а не из страха или привычки.»</div>
+        <div class="review-author">
+          <div class="review-avatar">И</div>
+          <div>
+            <div class="review-name">Ирина</div>
+            <div class="review-meta">Клиент AHD Integrator</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">«Даа, очень понравился формат, когда несколько систем укладываются в общее понимание о тебе. И так все подробно по всем темам разбирается. Еще больше утверждаешься в определенных моментах, что это твоё и надо идти дальше.»</div>
+        <div class="review-author">
+          <div class="review-avatar">К</div>
+          <div>
+            <div class="review-name">Клиент</div>
+            <div class="review-meta">AHD Integrator</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">«В отчете есть конкретные рекомендации для дальнейшего развития в определенных задачах. Это прям карта действий. Благодарю за твое исследование 🔥»</div>
+        <div class="review-author">
+          <div class="review-avatar">Е</div>
+          <div>
+            <div class="review-name">Екатерина</div>
+            <div class="review-meta">Клиент AHD Integrator</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">«Волосы дыбом, вот лет на 20 бы эту проработку пораньше, а так весь зарытый потенциал впустую. Очень много прямо про себя правильного, иногда прямо теми словами, которые я говорила себе или о себе другим.»</div>
+        <div class="review-author">
+          <div class="review-avatar">К</div>
+          <div>
+            <div class="review-name">Клиент</div>
+            <div class="review-meta">AHD Integrator</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="reviews-cta reveal">
+      <a href="https://t.me/+8xSv4jtv8fllZWRi" target="_blank" rel="noopener" class="btn-reviews-more">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        Читать все отзывы в Telegram
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- AUTHOR -->
+<section class="section" id="author">
+  <div class="container">
+    <div class="section-tag reveal">Об авторе</div>
+    <div class="author-block reveal">
+      <div class="author-avatar">
+        <img src="author.jpg" alt="AHD Integrator" onerror="this.style.display='none';this.parentNode.textContent='A'">
+      </div>
+      <div class="author-info">
+        <div class="author-name">AHD Integrator</div>
+        <div class="author-title">Аналитик · Интегратор шести систем</div>
+        <div class="author-text">Я не астролог. Я не нумеролог — и никогда не планировала делать что-то связанное с картами. Я человек из бизнеса. Живу из головы, из структуры, из логики.<br><br>Полтора года я изучала, как разные системы описывают одного человека: где сходятся, где противоречат, как выстроить иерархию. Параллельно изучала психологические модели с доказательной базой — SDT, схемы Янга, теорию привязанности. В итоге получилась архитектура, где каждый вывод верифицируется минимум тремя независимыми источниками.<br><br>Проект собрала за полгода и каждый день продолжаю улучшать и дорабатывать его. Я всё ещё живу из головы. Именно поэтому этой системе можно доверять.</div>
+        <div class="author-stats">
+          <div class="stat-item">
+            <div class="stat-num">1.5 года</div>
+            <div class="stat-label">изучения систем</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">6</div>
+            <div class="stat-label">систем в методе</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">3+</div>
+            <div class="stat-label">источника верифицации</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ORDER -->
+<section class="section section-order" id="order">
+  <div class="order-glow"></div>
+  <div class="container">
+    <div class="order-box reveal">
+      <div class="section-tag">Заказать</div>
+      <h2 class="order-title">Deep Dive Report</h2>
+      <p class="order-sub">Разовая оплата · Готовится индивидуально · PDF · 3 дня</p>
+      <div class="order-includes">
+        <span>12 разделов</span>
+        <span class="sep">·</span>
+        <span>IR-индекс</span>
+        <span class="sep">·</span>
+        <span>3 задания</span>
+        <span class="sep">·</span>
+        <span>Инструкция на год</span>
+        <span class="sep">·</span>
+        <span>Транзиты</span>
+      </div>
+      <div class="price-multi reveal">
+        <div class="price-col">
+          <span class="pcur">€</span><span class="pval">50</span>
+        </div>
+        <div class="price-divider">|</div>
+        <div class="price-col">
+          <span class="pval">5 000</span><span class="pcur">₽</span>
+        </div>
+        <div class="price-divider">|</div>
+        <div class="price-col">
+          <span class="pcur">$</span><span class="pval">55</span>
+        </div>
+      </div>
+      <p class="price-note">Разовая оплата · Без подписки · Без скрытых условий</p>
+      <a href="#" class="btn-order" id="order-btn">Перейти к оплате →</a>
+      <p class="order-note">Нужны: дата, время и город рождения</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="logo">AHD <span class="logo-dot">·</span> Integrator</div>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/ahd_integrator/" target="_blank" rel="noopener" class="social-link social-link--footer" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          Instagram
+        </a>
+        <a href="https://www.facebook.com/AHDINTEGRATOR" target="_blank" rel="noopener" class="social-link social-link--footer" aria-label="Facebook">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          Facebook
+        </a>
+      </div>
+      <p class="footer-copy">© 2026 Deep Dive Report. Индивидуальный анализ.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
