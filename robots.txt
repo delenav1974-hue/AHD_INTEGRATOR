@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://delenav1974-hue.github.io/AHD_INTEGRATOR/sitemap.xml
