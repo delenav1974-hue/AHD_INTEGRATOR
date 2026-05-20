@@ -8,10 +8,10 @@
 <link rel="canonical" href="https://delenav1974-hue.github.io/AHD_INTEGRATOR/">
 <meta property="og:title" data-t-content="meta_title" content="Deep Dive Report — персональный анализ по 6 системам">
 <meta property="og:description" data-t-content="meta_desc" content="Натальная карта, Human Design, Матрица Судьбы. Только то, что подтверждено твоими данными.">
-<meta property="og:image" content="author.jpg">
+<meta property="og:image" content="report_mockup.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=1.25">
+<link rel="stylesheet" href="style.css?v=1.28">
 </head>
 <body>
 
@@ -36,7 +36,7 @@
         <span class="lang-sep">|</span>
         <button class="lang-btn" data-lang="en">EN</button>
       </div>
-      <a href="#order" class="btn-nav" data-t="nav_order">Заказать отчёт</a>
+      <button class="btn-nav open-order" data-t="nav_order">Заказать отчёт</button>
     </div>
   </div>
 </nav>
@@ -49,7 +49,7 @@
     <h1 class="hero-title reveal" data-t="hero_title">Персональный отчёт о твоей <br><em>внутренней архитектуре.</em></h1>
     <p class="hero-sub reveal" data-t="hero_sub">На основе шести систем: астрология, Human Design, Матрица Судьбы. Читаешь — и узнаёшь себя. Не знак Зодиака. Себя.</p>
     <div class="hero-cta reveal">
-      <a href="https://t.me/delenava" target="_blank" rel="noopener" class="btn-primary" data-t="hero_tg">Заказать в Telegram</a>
+      <button class="btn-primary open-order" data-t="hero_tg">Заказать отчет</button>
       <a href="#structure" class="btn-ghost" data-t="hero_structure">Смотреть структуру</a>
     </div>
     <div class="hero-meta reveal">
@@ -87,22 +87,27 @@
 
     <!-- SAMPLE BLOCK -->
     <div class="report-sample reveal">
-      <div class="sample-header">
-        <span class="sample-tag" data-t="sample_tag">Механический аудит (Пример верификации)</span>
-      </div>
-      <div class="sample-content">
-        <p class="sample-title" data-t="sample_title">Паттерн: Социальная дипломатия при глубокой внутренней избирательности</p>
-        <div class="sample-text">
-          <ul style="list-style: none; padding-left: 0; color: var(--text-muted); font-size: 0.9rem;">
-            <li style="margin-bottom: 8px;"><strong>Astro:</strong> <span data-t="sample_astro">Асцендент в Весах (дружелюбие) + Луна в Рыбах (закрытость).</span></li>
-            <li style="margin-bottom: 8px;"><strong>HD:</strong> <span data-t="sample_hd">4 линия (Связи) + 2 линия (Одиночество).</span></li>
-            <li style="margin-bottom: 8px;"><strong>Matrix:</strong> <span data-t="sample_matrix">П5=15 (Магнетизм) + П3=12 (Дистанция).</span></li>
-          </ul>
-          <blockquote style="margin-top: 20px;" data-t="sample_quote">
-            «...Вывод: Паттерн подтвержден. Вы обладаете природным магнетизмом и легко располагаете к себе людей, но ваша истинная продуктивность возможна только в периоды тотального уединения. Попытка быть "постоянно на связи" ведет к энергетическому истощению...»
-          </blockquote>
+      <div class="sample-grid">
+        <div class="sample-image">
+          <img src="report_mockup.jpg" alt="Deep Dive Report Preview">
         </div>
-        <p class="sample-note" data-t="sample_note">Фрагмент из реального раздела VII. Данные изменены.</p>
+        <div class="sample-info">
+          <div class="sample-header">
+            <span class="sample-tag" data-t="sample_tag">Механический аудит (Пример верификации)</span>
+          </div>
+          <p class="sample-title" data-t="sample_title">Простой пример: Выбор между реализацией и покоем</p>
+          <div class="sample-text">
+            <ul class="verification-list">
+              <li><strong>Astro:</strong> <span data-t="sample_astro">Асцендент в Льве (жажда признания) + Марс в 10 доме (карьера).</span></li>
+              <li><strong>HD:</strong> <span data-t="sample_hd">Проектор (ожидание приглашения) + Эго-центр (воля к успеху).</span></li>
+              <li><strong>Matrix:</strong> <span data-t="sample_matrix">19 аркан (Солнце — масштаб) + 11 аркан (Сила).</span></li>
+            </ul>
+            <blockquote data-t="sample_quote">
+              «...Вывод: Паттерн подтвержден. Вы обладаете огромным ресурсом для лидерства, но ваше тело блокирует действия, если вы пытаетесь "бежать впереди паровоза" без признания ваших заслуг другими. Успех приходит только через запрос извне...»
+            </blockquote>
+          </div>
+          <p class="sample-note" data-t="sample_note">Фрагмент из реального отчета. Данные изменены для примера.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -141,6 +146,10 @@
         <p data-t="card6">Понимаешь, почему один и тот же сценарий повторяется — в деньгах, в отношениях, в решениях</p>
       </div>
     </div>
+
+    <div class="cta-block reveal">
+      <button class="btn-primary open-order" data-t="nav_order">Заказать отчёт</button>
+    </div>
   </div>
 </section>
 
@@ -149,66 +158,92 @@
   <div class="section-glow"></div>
   <div class="container">
     <div class="section-tag reveal" data-t="method_tag">Принцип метода</div>
-    <h2 class="section-title reveal" data-t="method_title"><em>Одна система — это версия.<br>Несколько систем — это факт о тебе.</em></h2>
-    <p class="section-desc reveal" data-t="method_desc">В отчёт попадает только то, что подтверждено минимум <strong>двумя системами</strong>. Шесть независимых источников смотрят на одно и то же.</p>
+    <h2 class="section-title reveal" data-t="method_title">Одна система — это версия.<br>Несколько систем — это факт о тебе.</h2>
+    <p class="section-desc reveal" data-t="method_desc">В отчёт попадает только то, что подтверждено минимум двумя системами. Шесть независимых источников смотрят на одно и то же.</p>
 
     <div class="systems-grid">
-      <div class="system-item reveal">
-        <div class="sys-num">01</div>
-        <div class="sys-content">
-          <div class="sys-name" data-t="sys1_name">Натальная карта</div>
-          <div class="sys-desc" data-t="sys1_desc">Природа, мышление, конструкция</div>
+      <div class="system-item reveal clickable">
+        <div class="sys-header">
+          <div class="sys-num">01</div>
+          <div class="sys-content">
+            <div class="sys-name" data-t="sys1_name">Натальная карта</div>
+            <div class="sys-desc" data-t="sys1_desc">Природа, мышление, конструкция</div>
+          </div>
+          <div class="sys-badge" data-t="sys_p1">Приоритет I</div>
+          <div class="sys-arrow">↓</div>
         </div>
-        <div class="sys-badge" data-t="sys_p1">Приоритет I</div>
+        <div class="sys-detail" data-t="sys1_detail">Базовый психологический фундамент. Показывает ваши врожденные таланты, способ обработки информации и эмоциональные реакции. Это то, на что вы опираетесь всю жизнь.</div>
       </div>
-      <div class="system-item reveal">
-        <div class="sys-num">02</div>
-        <div class="sys-content">
-          <div class="sys-name" data-t="sys2_name">Human Design</div>
-          <div class="sys-desc" data-t="sys2_desc">Тип энергии, стратегия решений</div>
+
+      <div class="system-item reveal clickable">
+        <div class="sys-header">
+          <div class="sys-num">02</div>
+          <div class="sys-content">
+            <div class="sys-name" data-t="sys2_name">Human Design</div>
+            <div class="sys-desc" data-t="sys2_desc">Тип энергии, стратегия решений</div>
+          </div>
+          <div class="sys-badge" data-t="sys_p2">Приоритет II</div>
+          <div class="sys-arrow">↓</div>
         </div>
-        <div class="sys-badge" data-t="sys_p2">Приоритет II</div>
+        <div class="sys-detail" data-t="sys2_detail">Механика вашего взаимодействия с миром. Как корректно тратить энергию, чтобы не выгорать, и как принимать решения, которым можно доверять.</div>
       </div>
-      <div class="system-item reveal">
-        <div class="sys-num">03</div>
-        <div class="sys-content">
-          <div class="sys-name" data-t="sys3_name">Матрица Судьбы</div>
-          <div class="sys-desc" data-t="sys3_desc">Данность, задача, теневые зоны</div>
+
+      <div class="system-item reveal clickable">
+        <div class="sys-header">
+          <div class="sys-num">03</div>
+          <div class="sys-content">
+            <div class="sys-name" data-t="sys3_name">Матрица Судьбы</div>
+            <div class="sys-desc" data-t="sys3_desc">Данность, задача, теневые зоны</div>
+          </div>
+          <div class="sys-arrow">↓</div>
         </div>
+        <div class="sys-detail" data-t="sys3_detail">Показывает основные архетипы вашей личности. Мы анализируем "хвосты" и задачи, чтобы понять, какие теневые сценарии мешают вашему росту в деньгах и отношениях.</div>
       </div>
-      <div class="system-item reveal">
-        <div class="sys-num">04</div>
-        <div class="sys-content">
-          <div class="sys-name" data-t="sys4_name">Кармические узлы</div>
-          <div class="sys-desc" data-t="sys4_desc">Откуда паттерн и куда расти</div>
+
+      <div class="system-item reveal clickable">
+        <div class="sys-header">
+          <div class="sys-num">04</div>
+          <div class="sys-content">
+            <div class="sys-name" data-t="sys4_name">Кармические узлы</div>
+            <div class="sys-desc" data-t="sys4_desc">Откуда паттерн и куда расти</div>
+          </div>
+          <div class="sys-arrow">↓</div>
         </div>
+        <div class="sys-detail" data-t="sys4_detail">Вектор вашего развития. Показывает привычные (но уже не эффективные) модели поведения и новые качества, которые нужно наработать для выхода на следующий уровень.</div>
       </div>
-      <div class="system-item reveal">
-        <div class="sys-num">05</div>
-        <div class="sys-content">
-          <div class="sys-name" data-t="sys5_name">Теневые арканы</div>
-          <div class="sys-desc" data-t="sys5_desc">Блоки в деньгах и отношениях</div>
+
+      <div class="system-item reveal clickable">
+        <div class="sys-header">
+          <div class="sys-num">05</div>
+          <div class="sys-content">
+            <div class="sys-name" data-t="sys5_name">Теневые арканы</div>
+            <div class="sys-desc" data-t="sys5_desc">Блоки в деньгах и отношениях</div>
+          </div>
+          <div class="sys-badge" data-t="sys_p3">Приоритет III</div>
+          <div class="sys-arrow">↓</div>
         </div>
-        <div class="sys-badge" data-t="sys_p3">Приоритет III</div>
+        <div class="sys-detail" data-t="sys5_detail">Скрытые механизмы саботажа. Мы разбираем, почему вы выбираете стратегии, которые ведут к потерям, и как перевести эти арканы в ресурсное состояние.</div>
       </div>
-      <div class="system-item reveal">
-        <div class="sys-num">06</div>
-        <div class="sys-content">
-          <div class="sys-name" data-t="sys6_name">Психологический слой</div>
-          <div class="sys-desc" data-t="sys6_desc">Механизм: почему, а не только что</div>
+
+      <div class="system-item reveal clickable">
+        <div class="sys-header">
+          <div class="sys-num">06</div>
+          <div class="sys-content">
+            <div class="sys-name" data-t="sys6_name">Психологический слой</div>
+            <div class="sys-desc" data-t="sys6_desc">Механизм: почему, а не только что</div>
+          </div>
+          <div class="sys-arrow">↓</div>
         </div>
+        <div class="sys-detail" data-t="sys6_detail">Интеграция всех данных через призму современной психологии. Мы объясняем не только "что" в вас заложено, но и "как" этот механизм работает на уровне привычек.</div>
       </div>
     </div>
 
     <div class="hierarchy-note reveal">
-      <span data-t="sys_hier">Иерархия при противоречии:</span>
-      <div class="hierarchy-chain">
-        <span class="hc-item active" data-t="sys1_name">Натальная карта</span>
-        <span class="hc-arrow">→</span>
-        <span class="hc-item">Human Design</span>
-        <span class="hc-arrow">→</span>
-        <span class="hc-item" data-t="sys_arc">Арканы</span>
+      <div class="h-title">
+        <span data-t="sys_hier">Иерархия систем:</span>
+        <span class="h-icon" title="Если системы говорят разное, мы следуем иерархии">?</span>
       </div>
+      <p class="h-desc" data-t="sys_hier_desc">Если системы говорят разное, мы следуем иерархии: Натальная карта (база) → Human Design (механика) → Арканы (детали).</p>
     </div>
   </div>
 </section>
@@ -217,8 +252,9 @@
 <section class="section" id="ir">
   <div class="container">
     <div class="section-tag reveal" data-t="ir_tag">IR-Индекс</div>
-    <h2 class="section-title reveal" data-t="ir_title">Числовая метрика<br>согласованности</h2>
-    <p class="section-desc reveal" data-t="ir_desc">IR показывает, насколько твои текущие действия совпадают с тем, что заложено в карте. Это не оценка тебя — это точка отсчёта для роста.</p>
+    <h2 class="section-title reveal" data-t="ir_title">Числовая метрика согласованности</h2>
+    <p class="section-desc reveal" data-t="ir_desc">IR (Integrator Rating) — это индекс того, насколько ваши текущие действия совпадают с вашим природным дизайном. Это ваша точка отсчета.</p>
+    <div class="ir-help-box reveal" data-t="ir_help">Чем выше индекс, тем меньше внутреннего сопротивления и больше результатов при тех же усилиях.</div>
 
     <div class="ir-params reveal">
       <span data-t="ir_p1">Принятие решений</span>
@@ -282,94 +318,157 @@
   <div class="section-glow glow-right"></div>
   <div class="container">
     <div class="section-tag reveal" data-t="struct_tag">Структура отчёта</div>
-    <h2 class="section-title reveal" data-t="struct_title">12 разделов.<br>Каждый — о конкретном механизме.</h2>
-    <p class="section-desc reveal" data-t="struct_desc">Не описание черт характера — описание того, как работает твоя психика и почему.</p>
+    <h2 class="section-title reveal" data-t="struct_title">12 разделов глубокого анализа</h2>
+    <p class="section-desc reveal" data-t="struct_desc">Нажмите на раздел, чтобы узнать, что именно мы в нем разбираем.</p>
 
     <div class="sections-list">
-      <div class="sec-item reveal">
-        <div class="sec-num">I</div>
-        <div class="sec-body">
-          <div class="sec-name" data-t="s1">Конструкция личности</div>
-          <div class="sec-desc" data-t="s1_d">Как думаешь, как принимаешь решения, когда энергия растёт, когда падает</div>
+      <div class="sec-item reveal clickable">
+        <div class="sec-header">
+          <div class="sec-num">I</div>
+          <div class="sec-body">
+            <div class="sec-name" data-t="s1">Конструкция личности</div>
+            <div class="sec-desc" data-t="s1_d">Как вы думаете и принимаете решения</div>
+          </div>
+          <div class="sec-arrow">↓</div>
         </div>
+        <div class="sec-detail" data-t="s1_detail">Разбор вашего способа восприятия реальности. Вы поймете, почему одни задачи даются легко, а другие вызывают ступор.</div>
       </div>
-      <div class="sec-item reveal">
-        <div class="sec-num">II</div>
-        <div class="sec-body">
-          <div class="sec-name" data-t="s2">Главный внутренний конфликт</div>
-          <div class="sec-desc" data-t="s2_d">Повторяющийся сценарий: к чему стремишься — и что выбираешь снова и снова вместо этого</div>
+
+      <div class="sec-item reveal clickable">
+        <div class="sec-header">
+          <div class="sec-num">II</div>
+          <div class="sec-body">
+            <div class="sec-name" data-t="s2">Главный внутренний конфликт</div>
+            <div class="sec-desc" data-t="s2_d">Ваш основной сценарий саботажа</div>
+          </div>
+          <div class="sec-arrow">↓</div>
         </div>
+        <div class="sec-detail" data-t="s2_detail">Мы находим точку, где ваши желания сталкиваются со страхами, и показываем, как этот конфликт разрешить.</div>
       </div>
-      <div class="sec-item reveal">
-        <div class="sec-num">III</div>
-        <div class="sec-body">
-          <div class="sec-name" data-t="s3">Точка силы</div>
-          <div class="sec-desc" data-t="s3_d">Только то, что подтверждено тремя системами одновременно. Не комплимент — факт</div>
+
+      <div class="sec-item reveal clickable">
+        <div class="sec-header">
+          <div class="sec-num">III</div>
+          <div class="sec-body">
+            <div class="sec-name" data-t="s3">Точка силы</div>
+            <div class="sec-desc" data-t="s3_d">Ваш самый мощный подтвержденный талант</div>
+          </div>
+          <div class="sec-arrow">↓</div>
         </div>
+        <div class="sec-detail" data-t="s3_detail">То, что подтверждено минимум тремя системами. Это ваш неисчерпаемый ресурс, на котором строится успех.</div>
       </div>
-      <div class="sec-item reveal">
-        <div class="sec-num">IV</div>
-        <div class="sec-body">
-          <div class="sec-name" data-t="s4">Стратегический вектор 3–5 лет</div>
-          <div class="sec-desc" data-t="s4_d">Что усилить, что делегировать, что исключить — из данных карты</div>
+
+      <div class="sec-item reveal clickable">
+        <div class="sec-header">
+          <div class="sec-num">IV</div>
+          <div class="sec-body">
+            <div class="sec-name" data-t="s4">Стратегический вектор 3–5 лет</div>
+            <div class="sec-desc" data-t="s4_d">Направления для долгосрочного роста</div>
+          </div>
+          <div class="sec-arrow">↓</div>
         </div>
+        <div class="sec-detail" data-t="s4_detail">Рекомендации по развитию, основанные на циклах планет и ваших транзитах. Что пора начинать, а что — оставить.</div>
       </div>
-      <div class="sec-item reveal">
-        <div class="sec-num">V</div>
-        <div class="sec-body">
-          <div class="sec-name" data-t="s5">Зоны риска</div>
-          <div class="sec-desc" data-t="s5_d">Механизм энергетического слива: триггер → паттерн → потеря</div>
+
+      <div class="sec-item reveal clickable">
+        <div class="sec-header">
+          <div class="sec-num">V</div>
+          <div class="sec-body">
+            <div class="sec-name" data-t="s5">Зоны риска</div>
+            <div class="sec-desc" data-t="s5_d">Где вы теряете энергию и деньги</div>
+          </div>
+          <div class="sec-arrow">↓</div>
         </div>
+        <div class="sec-detail" data-t="s5_detail">Механизм слива: триггер — реакция — потеря. Мы показываем, как разомкнуть эту цепочку.</div>
       </div>
-      <div class="sec-item reveal">
-        <div class="sec-num">VI</div>
-        <div class="sec-body">
-          <div class="sec-name" data-t="s6">IR-индекс согласованности</div>
-          <div class="sec-desc" data-t="s6_d">Числовая оценка того, насколько твои действия совпадают с картой</div>
+
+      <div class="sec-item reveal clickable">
+        <div class="sec-header">
+          <div class="sec-num">VI</div>
+          <div class="sec-body">
+            <div class="sec-name" data-t="s6">IR-индекс</div>
+            <div class="sec-desc" data-t="s6_d">Числовой расчет вашей текущей точки</div>
+          </div>
+          <div class="sec-arrow">↓</div>
         </div>
+        <div class="sec-detail" data-t="s6_detail">Подробный разбор IR по 5 параметрам: решения, действия, деньги, партнерство, вектор.</div>
       </div>
-      <div class="sec-item reveal">
-        <div class="sec-num">VII</div>
-        <div class="sec-body">
-          <div class="sec-name" data-t="s7">Деньги и реализация</div>
-          <div class="sec-desc" data-t="s7_d">Условия максимального дохода. Кармический паттерн блока. Контрольные точки</div>
+
+      <div class="sec-item reveal clickable">
+        <div class="sec-header">
+          <div class="sec-num">VII</div>
+          <div class="sec-body">
+            <div class="sec-name" data-t="s7">Деньги и реализация</div>
+            <div class="sec-desc" data-t="s7_d">Условия вашего максимального дохода</div>
+          </div>
+          <div class="sec-arrow">↓</div>
         </div>
+        <div class="sec-detail" data-t="s7_detail">Где лежат деньги именно для вас. Нужна ли команда, стоит ли рисковать и какой тип деятельности принесет максимум.</div>
       </div>
-      <div class="sec-item reveal">
-        <div class="sec-num">VIII</div>
-        <div class="sec-body">
-          <div class="sec-name" data-t="s8">Партнёрские отношения</div>
-          <div class="sec-desc" data-t="s8_d">Модель ресурсного партнёрства. Паттерн привязанности. Триггерная цепочка</div>
+
+      <div class="sec-item reveal clickable">
+        <div class="sec-header">
+          <div class="sec-num">VIII</div>
+          <div class="sec-body">
+            <div class="sec-name" data-t="s8">Партнёрские отношения</div>
+            <div class="sec-desc" data-t="s8_d">Ваша модель ресурсного союза</div>
+          </div>
+          <div class="sec-arrow">↓</div>
         </div>
+        <div class="sec-detail" data-t="s8_detail">Кого вы выбираете и почему. Как выстроить близость, не теряя себя и своего достоинства.</div>
       </div>
-      <div class="sec-item reveal">
-        <div class="sec-num">IX</div>
-        <div class="sec-body">
-          <div class="sec-name" data-t="s9">Личная жизнь</div>
-          <div class="sec-desc" data-t="s9_d">Эмоциональная конструкция. Условия подлинной близости. Скрытая зона</div>
+
+      <div class="sec-item reveal clickable">
+        <div class="sec-header">
+          <div class="sec-num">IX</div>
+          <div class="sec-body">
+            <div class="sec-name" data-t="s9">Личная жизнь</div>
+            <div class="sec-desc" data-t="s9_d">Эмоциональный комфорт и скрытые зоны</div>
+          </div>
+          <div class="sec-arrow">↓</div>
         </div>
+        <div class="sec-detail" data-t="s9_detail">Что вам нужно для того, чтобы чувствовать себя в безопасности и быть по-настоящему счастливым дома.</div>
       </div>
-      <div class="sec-item reveal">
-        <div class="sec-num">X</div>
-        <div class="sec-body">
-          <div class="sec-name" data-t="s10">Инструкция на 12 месяцев</div>
-          <div class="sec-desc" data-t="s10_d">Усилить, прекратить, как принимать решения</div>
+
+      <div class="sec-item reveal clickable">
+        <div class="sec-header">
+          <div class="sec-num">X</div>
+          <div class="sec-body">
+            <div class="sec-name" data-t="s10">Инструкция на 12 месяцев</div>
+            <div class="sec-desc" data-t="s10_d">План действий на ближайший год</div>
+          </div>
+          <div class="sec-arrow">↓</div>
         </div>
+        <div class="sec-detail" data-t="s10_detail">Конкретные фокусы внимания по месяцам: когда нажать на газ, а когда уйти в тень.</div>
       </div>
-      <div class="sec-item reveal">
-        <div class="sec-num">XI</div>
-        <div class="sec-body">
-          <div class="sec-name" data-t="s11">Активные транзиты</div>
-          <div class="sec-desc" data-t="s11_d">Какие планетарные циклы активны сейчас — и как влияют на деньги и отношения</div>
+
+      <div class="sec-item reveal clickable">
+        <div class="sec-header">
+          <div class="sec-num">XI</div>
+          <div class="sec-body">
+            <div class="sec-name" data-t="s11">Активные транзиты</div>
+            <div class="sec-desc" data-t="s11_d">Влияние внешних циклов прямо сейчас</div>
+          </div>
+          <div class="sec-arrow">↓</div>
         </div>
+        <div class="sec-detail" data-t="s11_detail">Разбор того, какие уроки вы проходите в данный момент и как использовать текущий период с пользой.</div>
       </div>
-      <div class="sec-item reveal">
-        <div class="sec-num">XII</div>
-        <div class="sec-body">
-          <div class="sec-name" data-t="s12">Мотивационный протокол</div>
-          <div class="sec-desc" data-t="s12_d">Три задания по методу под твой IR и тип HD</div>
+
+      <div class="sec-item reveal clickable">
+        <div class="sec-header">
+          <div class="sec-num">XII</div>
+          <div class="sec-body">
+            <div class="sec-name" data-t="s12">Мотивационный протокол</div>
+            <div class="sec-desc" data-t="s12_d">Три задания для трансформации</div>
+          </div>
+          <div class="sec-arrow">↓</div>
         </div>
+        <div class="sec-detail" data-t="s12_detail">Практические упражнения, подобранные специально под вашу структуру личности для запуска изменений.</div>
       </div>
+    </div>
+
+    <div class="cta-block reveal">
+      <button class="btn-primary open-order" data-t="nav_order">Заказать отчёт</button>
     </div>
   </div>
 </section>
@@ -642,7 +741,7 @@
     </div>
 
     <div class="reviews-cta reveal">
-      <a href="https://t.me/+8xSv4jtv8fllZWRi" target="_blank" rel="noopener" class="btn-reviews-more" data-t="rev_more">
+      <a href="https://t.me/Delenava" target="_blank" rel="noopener" class="btn-reviews-more" data-t="rev_more">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
         Читать все отзывы в Telegram
       </a>
@@ -679,64 +778,27 @@
   </div>
 </section>
 
-<!-- ORDER/PRICING SECTION -->
-<section class="section section-order" id="order">
-  <div class="order-glow"></div>
+<!-- ORDER -->
+<section class="section section-dark" id="order">
   <div class="container">
-    <div class="pricing-box reveal">
-      <div class="pricing-tag" data-t="order_tag">ЗАКАЗАТЬ</div>
-      <h2 class="pricing-main-title">Deep Dive Report</h2>
-      <div class="pricing-features" data-t="order_features">
-        Разовая оплата · Готовится индивидуально · PDF · 3 дня
-      </div>
-      <div class="pricing-mini-nav" data-t="order_nav">
-        12 разделов · IR-индекс · 3 задания · Инструкция на год · Транзиты
-      </div>
+    <div class="order-box reveal">
+      <div class="section-tag" data-t="order_tag">ЗАКАЗАТЬ ОТЧЁТ</div>
+      <p class="order-sub" data-t="order_sub">PDF · 12 разделов · 3 дня</p>
+      
+      <ul class="order-items">
+        <li><span class="dot">◈</span> <span data-t="oi1">12 разделов</span></li>
+        <li><span class="dot">◈</span> <span data-t="oi2">IR-индекс</span></li>
+        <li><span class="dot">◈</span> <span data-t="oi3">3 задания</span></li>
+        <li><span class="dot">◈</span> <span data-t="oi4">План на год</span></li>
+        <li><span class="dot">◈</span> <span data-t="oi5">Транзиты</span></li>
+      </ul>
 
       <div class="price-row">
-        <div class="price-item">
-          <span class="curr">€</span><span class="val">50</span>
-        </div>
-        <div class="price-sep">|</div>
-        <div class="price-item">
-          <span class="val">5 000</span><span class="curr">₽</span>
-        </div>
-        <div class="price-sep">|</div>
-        <div class="price-item">
-          <span class="curr">$</span><span class="val">55</span>
-        </div>
+        <div class="price-value" data-t="price_val">5000 руб / 50 евро / 55 долларов</div>
+        <button class="btn-primary open-order" data-t="btn_pay">Заполнить данные и заказать</button>
       </div>
-
-      <div class="price-note" data-t="price_note">
-        Разовая оплата · Без подписки · Без скрытых условий
-      </div>
-
-      <a href="https://t.me/delenava" target="_blank" rel="noopener" class="btn-pay" data-t="btn_pay">
-        Перейти к оплате →
-      </a>
-
-      <div class="order-footer-note" data-t="n_footer">
-        Нужны: дата, время и город рождения
-      </div>
-    </div>
-
-    <!-- OLD CONTACT BOX (REDUCED) -->
-    <div class="contact-mini reveal">
-      <p data-t="ask_sub_footer">Остались вопросы? Напишите мне — я отвечу в течение 24 часов.</p>
-      <div class="contact-links">
-        <a href="https://t.me/delenava" target="_blank" class="contact-btn">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13M22 2L15 22L11 13L2 9L22 2Z"/></svg>
-          Telegram
-        </a>
-        <a href="https://wa.me/359879367040" target="_blank" class="contact-btn">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-11.7 8.38 8.38 0 0 1 3.8.9L21 3z"/></svg>
-          WhatsApp
-        </a>
-        <a href="mailto:delenav@yahoo.com" class="contact-btn">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          Email
-        </a>
-      </div>
+      <p class="price-note" data-t="price_note">Единоразовая оплата. Без подписок.</p>
+      <div class="order-footer" data-t="n_footer">Понадобятся: дата, время и место рождения</div>
     </div>
   </div>
 </section>
@@ -744,23 +806,67 @@
 <!-- FOOTER -->
 <footer class="footer">
   <div class="container">
-    <div class="footer-inner">
-      <div class="logo">AHD <span class="logo-dot">·</span> Integrator</div>
-      <div class="footer-socials">
-        <a href="https://www.instagram.com/ahd_integrator/" target="_blank" rel="noopener" class="social-link social-link--footer" aria-label="Instagram">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-          Instagram
-        </a>
-        <a href="https://www.facebook.com/AHDINTEGRATOR" target="_blank" rel="noopener" class="social-link social-link--footer" aria-label="Facebook">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-          Facebook
-        </a>
+    <div class="footer-grid">
+      <div class="footer-info">
+        <div class="logo">AHD <span>Integrator</span></div>
+        <p data-t="hero_sub">На базе шести систем: астрология, Human Design, Матрица Судьбы. Ты читаешь — и узнаешь себя. Не знак зодиака. Себя.</p>
       </div>
-      <p class="footer-copy" data-t="foot_copy">© 2026 Deep Dive Report. Индивидуальный анализ.</p>
+      <div class="footer-links">
+        <a href="#method" data-t="method_tag">Метод</a>
+        <a href="#structure" data-t="struct_tag">Структура</a>
+        <a href="#faq" data-t="faq_tag">FAQ</a>
+      </div>
+      <div class="footer-social">
+        <p data-t="trust_note">Остались вопросы?</p>
+        <a href="https://t.me/Delenava" class="btn-outline" data-t="foot_tg">Написать в Телеграмм</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-t="foot_copy">© 2026 Deep Dive Report. Все права защищены.</p>
     </div>
   </div>
 </footer>
 
-<script src="script.js?v=1.20"></script>
+<!-- ORDER MODAL -->
+<div class="modal" id="orderModal">
+  <div class="modal-overlay"></div>
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div class="modal-header">
+      <h3 data-t="form_title">Оформление заказа</h3>
+    </div>
+    <form class="order-form" id="mainOrderForm">
+      <div class="form-group">
+        <label data-t="form_name">Ваше имя</label>
+        <input type="text" name="name" required placeholder="Елена">
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label data-t="form_birthdate">Дата рождения</label>
+          <input type="date" name="birthdate" required>
+        </div>
+        <div class="form-group">
+          <label data-t="form_birthtime">Время рождения</label>
+          <input type="time" name="birthtime">
+          <label class="checkbox-label">
+            <input type="checkbox" name="unknown_time">
+            <span data-t="form_unknown_time">Не знаю точного времени</span>
+          </label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label data-t="form_birthplace">Место рождения (Город)</label>
+        <input type="text" name="birthplace" required placeholder="Москва">
+      </div>
+      <div class="form-group">
+        <label data-t="form_contact">Ваш контакт (Telegram / WhatsApp)</label>
+        <input type="text" name="contact" required placeholder="@username или +7...">
+      </div>
+      <button type="submit" class="btn-primary" style="width: 100%; margin-top: 10px;" data-t="form_submit">Отправить данные и перейти к оплате</button>
+    </form>
+  </div>
+</div>
+
+<script src="script.js?v=1.28"></script>
 </body>
 </html>
