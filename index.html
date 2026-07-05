@@ -693,7 +693,7 @@
     <div class="ask-block reveal">
       <div class="ask-title" data-t="ask_title">Остался вопрос?</div>
       <div class="ask-sub" data-t="ask_sub">Напиши — отвечу в течение 24 часов</div>
-      <form class="ask-form" id="askForm">
+      <form class="ask-form" id="askForm" method="POST">
         <div class="ask-row">
           <input class="ask-input" type="text" name="name" data-t-placeholder="ask_name" placeholder="Твоё имя" required>
           <input class="ask-input" type="email" name="email" data-t-placeholder="ask_email" placeholder="Email для ответа" required>
@@ -926,11 +926,15 @@
     <div class="modal-header">
       <h3 data-t="form_title">Оформление заказа</h3>
     </div>
-    <form class="order-form" id="mainOrderForm" action="https://formspree.io/f/mwvdybkn" method="POST">
+    <form class="order-form" id="mainOrderForm" method="POST">
       <input type="hidden" name="_subject" value="Новая заявка на отчёт AHD">
       <div class="form-group">
         <label data-t="form_name">Ваше имя</label>
         <input type="text" name="name" required placeholder="Елена">
+      </div>
+      <div class="form-group">
+        <label>Email (для получения отчета)</label>
+        <input type="email" name="email" required placeholder="example@mail.com">
       </div>
       <div class="form-row">
         <div class="form-group">
@@ -954,11 +958,58 @@
         <label data-t="form_contact">Ваш контакт (Telegram / WhatsApp)</label>
         <input type="text" name="contact" required placeholder="@username или +7...">
       </div>
-      <button type="submit" class="btn-primary" style="width: 100%; margin-top: 10px;" data-t="form_submit">Отправить данные и перейти к оплате</button>
+      <div class="form-group" style="margin-top: 15px;">
+        <label class="checkbox-label" style="font-size: 0.85rem; color: var(--text-muted);">
+          <input type="checkbox" name="privacy_policy" required>
+          <span>Согласен(на) на обработку персональных данных <!-- [TODO: РУЧНОЕ - вставьте ссылку на вашу политику конфиденциальности] --></span>
+        </label>
+      </div>
+      <button type="submit" class="btn-primary" style="width: 100%; margin-top: 10px;" data-t="form_submit">Отправить данные и рассчитать демо</button>
     </form>
   </div>
 </div>
 
+<!-- DEMO MODAL -->
+<div class="modal" id="demoModal">
+  <div class="modal-overlay"></div>
+  <div class="modal-content" style="max-width: 600px;">
+    <button class="modal-close">&times;</button>
+    <div class="modal-header">
+      <h3 style="font-size: 1.5rem; margin-bottom: 5px;">Первичный анализ</h3>
+      <p style="color: var(--text-muted); font-size: 0.9rem;">(Бесплатная часть)</p>
+    </div>
+    
+    <div class="demo-open" style="margin-bottom: 30px;">
+      <div class="demo-card" style="background: rgba(255,255,255,0.03); padding: 15px; border-radius: 8px; margin-bottom: 10px;">
+        <h4 style="margin-bottom: 5px; color: var(--primary);">✨ Астрология <span id="demo-sun-sign" style="color: #fff; font-weight: normal; font-size: 0.9em; margin-left: 5px;"></span></h4>
+        <p id="demo-sun" style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.4;"></p>
+      </div>
+      <div class="demo-card" style="background: rgba(255,255,255,0.03); padding: 15px; border-radius: 8px; margin-bottom: 10px;">
+        <h4 style="margin-bottom: 5px; color: var(--primary);">🧬 Human Design <span id="demo-hd-sign" style="color: #fff; font-weight: normal; font-size: 0.9em; margin-left: 5px;"></span> <span style="font-size:0.75em; color:#888; font-weight:normal;">(ориентировочно)</span></h4>
+        <p id="demo-hd" style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.4;"></p>
+      </div>
+      <div class="demo-card" id="demo-matrix-card" style="background: rgba(255,255,255,0.03); padding: 15px; border-radius: 8px;">
+        <h4 style="margin-bottom: 5px; color: var(--primary);">🔢 Матрица Судьбы <span id="demo-matrix-sign" style="color: #fff; font-weight: normal; font-size: 0.9em; margin-left: 5px;"></span></h4>
+        <p id="demo-matrix" style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.4;"></p>
+      </div>
+    </div>
+
+    <div class="demo-locked">
+      <div class="locked-block"><h3>Главный внутренний конфликт</h3><p class="ph"></p></div>
+      <div class="locked-block"><h3>Точка силы</h3><p class="ph"></p></div>
+      <div class="locked-block"><h3>IR-индекс</h3><p class="ph"></p></div>
+      <div class="locked-block"><h3>3 задания</h3><p class="ph"></p></div>
+      
+      <div class="unlock-overlay">
+        <p style="font-weight: 600; margin-bottom: 15px; font-size: 1.1rem; color: #fff;">Полный разбор по 6 системам — в отчёте</p>
+        <a href="#" class="btn-primary btn-pay btn-pay-ru" data-cur="ru" style="width: 100%; display: block; text-align: center; margin-bottom: 10px;">Оплатить картой РФ · 5000 ₽</a>
+        <a href="#" class="btn-outline btn-pay btn-pay-intl" data-cur="intl" style="width: 100%; display: block; text-align: center; color: #fff; border-color: rgba(255,255,255,0.2);">Pay by international card · 50 € / 55 $</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Scripts -->
 <script src="script.js?v=1.28"></script>
 </body>
 </html>
